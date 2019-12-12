@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="googleSheets.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <h1 align="center">☆　サンリオ　キャラクター紹介　☆</h1>
+  </head>
+  <body>
+   <div> <button id="mybtn">
+    <a href="#" class="btn-flat-vertical-border">BUTTON</a>
+
+    </button>
+    </div>
+
+
+    <div id="contents"></div>
+    
+    
+     
+    <script> 
+    
+    /* global $ loadSheets */
+    
+    $(function(){
+      $("#mybtn").on("click",showdata);
+      async function showdata () {
+        let data = await loadSheets('s1317153!A1:E100');
+        console.log(data.values[0][0]);
+        $("#contents").append(data.values[1][1]);
+        $("#contents").append("<img height='100px' src='"+data.values[1][2]+"'/>");
+        $("#contents").append(data.values[1][3]);
+        $("#contents").append("<br>");
+        
+     }
+    });
+        $(function(){
+      $("#mybtn").on("click",showdata);
+      async function showdata () {
+        let data = await loadSheets('s1317153!A1:E100');
+        console.log(data.values[0][0]);
+        $("#contents").append(data.values[2][1]);
+        $("#contents").append("<img height='100px' src='"+data.values[2][2]+"'/>");
+        $("#contents").append(data.values[2][3]);
+        $("#contents").append("<br>");
+     }
+    });
+    
+         $(function(){
+      $("#mybtn").on("click",showdata);
+      async function showdata () {
+        let data = await loadSheets('s1317153!A1:E100');
+        console.log(data.values[0][0]);
+        $("#contents").append(data.values[3][1]);
+        $("#contents").append("<img height='100px' src='"+data.values[3][2]+"'/>");
+        $("#contents").append(data.values[3][3]);
+        $("#contents").append("<br>");
+          
+     }
+    });
+         $(function(){
+      $("#mybtn").on("click",showdata);
+      
+      async function showdata () {
+        let data = await loadSheets('s1317153!A1:E100');
+        console.log(data.values[0][0]);
+        $("#contents").append(data.values[4][1]);
+        $("#contents").append("<img height='100px' src='"+data.values[4][2]+"'/>");
+        $("#contents").append(data.values[4][3]);
+        $("#contents").append("<br>");
+          
+    }
+    });
+        
+          
+    
+       
+         $(function(){
+      $("#mybtn").on("click",showdata);
+      
+      async function showdata () {
+        let data = await loadSheets('s1317153!A1:E100');
+        console.log(data.values[0][0]);
+        $("#contents").append(data.values[6][1]);
+        $("#contents").append("<img height='100px' src='"+data.values[6][2]+"'/>");
+        $("#contents").append(data.values[6][3]);
+        $("#contents").append("<br>");
+          
+     }
+    });
+         $(function(){
+      $("#mybtn").on("click",showdata);
+      
+      async function showdata () {
+        let data = await loadSheets('s1317153!A1:E100');
+        console.log(data.values[0][0]);
+        $("#contents").append(data.values[7][1]);
+        $("#contents").append("<img height='100px' src='"+data.values[7][2]+"'/>");
+        $("#contents").append(data.values[7][3]);
+        $("#contents").append("<br>");
+        
+        
+      
+          
+  
+          
+    
+        
+        
+      } 
+    });
+
+    </script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+  </body>
+</html>
